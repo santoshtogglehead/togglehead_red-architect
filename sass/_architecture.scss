@@ -1,0 +1,210 @@
+.architecture-box {
+    overflow: hidden;
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    .architecture-content {
+        position: absolute;
+        bottom: -72px;
+        width: 100%;
+        transition: all 1s ease;
+        h4 {
+            text-transform: uppercase;
+            font-size: 21px;
+            padding: 10px 0 10px 10px;
+            color: $global_nav;
+        }
+        h5 {
+            text-transform: capitalize;
+            font-size: 14px;
+            padding: 10px 0 0 10px;            
+        }
+    }
+}
+
+.architecture-overlay {
+    .overlay {
+        opacity: 1;
+    }
+    .architecture-content {
+        bottom: 0px;
+    }
+}
+
+.archi-para {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.lightgallery-media a {
+    &:after {
+        content: '';
+        display: block;
+        width: calc(100% - 30px);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 15px;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    &:hover {
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+.grid-item {
+    margin: 0 0 30px 0;
+    cursor: pointer; // &:after {
+    //     content: '';
+    //     display: block;
+    //     width: calc(100% - 30px);
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 15px;
+    //     background: rgba(0, 0, 0, 0.5);
+    //     opacity: 0;
+    //     transition: all 0.5s ease;
+    // }
+    // &:hover{
+    //     &:after{
+    //         opacity: 1;
+    //     }
+    // }
+}
+
+.select-wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    cursor: pointer;
+    width: 300px;
+    text-transform: uppercase;
+    text-align: left;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s ease;
+    h5 {
+        padding: 10px 0;
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+        &:after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border: 3px solid;
+            border-color: transparent transparent #fff #fff;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            transform: rotate(-45deg);
+            top: 10px;
+            transition: all 0.5s ease;
+        }
+    }
+    .down{
+        &:after{
+            transform: rotate(135deg);
+            top: 25px;
+        }
+    }
+    .select-option {
+        position: absolute;
+        top: 54px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+        z-index: 90;
+        box-shadow: rgba(0, 0, 0, 0.5) 1px 5px 20px;
+        li {
+            padding: 15px 0;
+            font-size: 15px;
+            border-bottom: 1px solid #000;
+            &:last-child{
+                border-bottom: 0;
+            }
+            span {
+                position: relative;
+                display: block;
+                &:before {
+                    content: '';
+                    position: relative;
+                    top: -5px;
+                    margin-right: 20px;
+                    width: 0px;
+                    height: 2px;
+                    background-color: $global_nav;
+                    display: inline-block;
+                    transition: all 0.7s ease;
+                }
+                &:after {
+                    content: '';
+                    width: 25px;
+                    height: 2px;
+                    position: absolute;
+                    top: 7px;
+                    right: 0;
+                    background-color: $global_nav;
+                    display: inline-block;
+                    transition: all 0.7s ease;
+                }
+            }
+            &:hover {
+                span {
+                    color: $global_nav;
+                    font-weight: 700;
+                    &:before {
+                        width: 50px;
+                    }
+                    &:after {
+                        width: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.svg-select-wrapper {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+    .architecture-box {
+        .architecture-content {
+            position: relative;
+            bottom: 0;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #archimage{
+        display: none;
+    }
+    .select-wrapper{
+        position: relative;
+        h5{
+            border-bottom: 1px solid #fff;
+        }
+    }
+}

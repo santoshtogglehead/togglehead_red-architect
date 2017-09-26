@@ -1,0 +1,128 @@
+form {
+    overflow: hidden;
+}
+
+.map-form {
+    background-color: $darkblue;
+}
+
+.contact-form {
+    h4 {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 30px;
+        font-family: $robotoregular;
+        font-weight: 200;
+        color: $white;
+        margin: 30px 0;
+    }
+    input,
+    textarea {
+        width: 100%;
+        margin: 15px 0;
+        padding: 10px;
+        outline: none;
+        color: $white;
+        border: 1px solid $white;
+        background: transparent;
+        text-transform: capitalize;
+        &[type="submit"] {
+            margin: 15px 0 40px 0;
+            outline: 1px solid #fff;
+        }
+        &:focus {
+            outline: 1px solid #fff;
+        }
+    }
+    textarea {
+        resize: none;
+        height: 120px;
+    }
+}
+
+.map {
+    z-index: 3;
+    position: relative;
+}
+
+.map-outer {
+    position: relative;
+    .white-patch {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: #fff;
+        z-index: 1;
+    }
+}
+
+.contact-top {
+    h3 {
+        font-family: $robotoregular;
+        line-height: 50px;
+        font-size: 40px;
+        margin: 30px 0;
+    }
+    .address-block {
+        margin: 30px 0;
+        span{
+        	float: left;
+        	width:10%;
+        }
+        address {
+            line-height: 30px;
+            float: left;
+        	width:90%;
+        	padding: 0 0 0 10px;
+        }
+        h4 {
+            color: $global_nav;
+            text-transform: uppercase;
+            line-height: 60px;
+            &:before {
+                content: '';
+                width: 30px;
+                height: 3px;
+                background: $global_nav;
+                display: inline-block;
+                position: relative;
+                top: -5px;
+                right: 0px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .contact-block {
+        margin: 30px 0;
+        h4 {
+            color: $global_nav;
+            text-transform: uppercase;
+            line-height: 60px;
+            &:before {
+                content: '';
+                width: 30px;
+                height: 3px;
+                background: $global_nav;
+                display: inline-block;
+                position: relative;
+                top: -5px;
+                right: 0px;
+                margin-right: 10px;
+            }
+        }
+        a {
+            line-height: 30px;
+            span:nth-child(1){
+            	float: left;
+            	width: 10%;
+            }
+            span:nth-child(2){
+            	float: left;
+            	width: 90%;
+            	padding: 0 0 10px 10px;
+            }
+        }
+    }
+}
