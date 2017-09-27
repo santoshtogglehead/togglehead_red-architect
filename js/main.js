@@ -75,6 +75,19 @@ $(document).ready(function() {
                 );
             });
             // architecture hover code
+
+            $(".architecture-block").each(function() {
+                $(this).hover(
+                    function() {
+                        $(this).addClass('architecture-overlay box-hover');
+                    },
+                    function() {
+                        $(this).removeClass('box-hover architecture-overlay');
+                    }
+                );
+            });
+
+            
         }
     });
 
@@ -105,6 +118,10 @@ $(document).ready(function() {
         download: false
     });
     // media page js ends here
+
+    $(window).on('scroll', function(){
+
+    });
 
     $(window).on('scroll', function() {
         $('.location').css('opacity', '1');

@@ -9,7 +9,6 @@
 }
 
 .our-work-section {
-    height: 500px;
     background-color: cyan;
 }
 
@@ -31,12 +30,37 @@
             background-color: $black;
             position: absolute;
             right: 0;
-            top: 17px;            
+            top: 17px;
         }
     }
 }
 
 // sidebar nav bar css ends
+// our-work-section css starts
+.our-work-section {
+    .architecture-block {
+    	display: block;
+        height: 640px;
+        margin: 40px 0;
+        border: 2px solid #000;
+    }
+    .interior-block {
+        display: inline-block;
+        width: 100%;
+        height: 300px;
+        margin: 40px 0 20px;
+        border: 2px solid #000;
+    }
+    .planning-block {
+        display: inline-block;
+        width: 100%;
+        height: 300px;
+        margin: 20px 0 40px;
+        border: 2px solid #000;
+    }
+}
+
+// our-work-section css ends
 // home-slider-2 css starts
 .home-slider-2 {
     background-color: $darkblue;
@@ -71,6 +95,7 @@
         left: 0;
         right: 0;
         bottom: 0;
+        padding-bottom: 72px;
         text-align: right;
         overflow: hidden;
         p {
@@ -127,4 +152,34 @@
     }
 }
 
+.testimonial-block {
+    height: 400px;
+    h5 {
+        font-size: 30px;
+        line-height: 60px;
+        font-family: $robotoregular;
+    }
+}
+
 // home-slider-2 css ends
+@media (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+    .home-slider-2 {
+        .carousel-caption {
+            text-align: left;
+            padding-bottom: 50px;
+        }
+        .image-part {
+            width: 100%;
+            height: 300px;
+        }
+        .carousel-indicators {
+            bottom: 310px;
+            left: 0%;
+            margin-left: 0%;
+            text-align: left;
+        }
+    }
+}

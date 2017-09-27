@@ -6,11 +6,6 @@
 
 <head>
   <?php include("includes/include_css.html") ?>
-  <style>
-    .h1{
-      display: none;
-    }
-  </style>
 </head>
 
 <body>
@@ -22,31 +17,39 @@
 
     <!-- side-nav-bar starts here -->
     <ul class="sidebar">
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Our Work</li>
-      <li>Client Speaks</li>
+      <li><span>Home</span></li>
+      <li><span>About Us</span></li>
+      <li><span>Our Work</span></li>
+      <li><span>Client Speaks</span></li>
     </ul>
     <!-- side-nav-bar ends here -->
 
     <!--  insert body content  -->
-    <!-- <section class="b">
-      <h1>Demo</h1>
-      <h1>Demo</h1>
-      <h1 class="h1">Demo</h1>
-      <h1 class="h1">Demo</h1>
-      <h1 class="h1">Demo</h1>
-      <h1 class="h1">Demo</h1>
-      <h1 class="h1">Demo</h1>
-      <h1 class="h1">Demo</h1>
-      <h1 class="h1">Demo</h1>
-      <h1 class="h1">Demo</h1>
-      <h1 class="h1">Demo</h1>
-      <h1 class="h1">Demo</h1>
-    </section> -->
     <section class="home-section"></section>
     <section class="about-section"></section>
-    <section class="our-work-section"></section>
+    <section class="our-work-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="architecture-block box">
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
+              <h5>architecture</h5>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="interior-block">
+              <h5>interior</h5>
+            </div>
+            <div class="planning-block">
+              <h5>planning</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="home-slider-2">
       <div class="container">
         <div class="row"> 
@@ -54,6 +57,20 @@
             <div class="inverted-box">
               <p>hear more about us from them</p>
               <h5>Client Speaks</h5>
+            </div>
+            <div class="testimonial-block">
+              <div class="outer-valign">
+                <div class="inner-valign">
+                  <h5>Know more what they have to say about us</h5>
+                  <a class="button-class button-class-white">
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <span>load more</span>
+                  </a>
+                </div>                
+              </div>
             </div>
           </div>
           <div class="col-md-8 col-md-pull-4">
@@ -152,7 +169,19 @@
     $("#myCarousel").carousel({
       interval : 4000
     });
+
   </script>
+  <script>
+  $(document).ready(function() {  
+       $("#myCarousel").swiperight(function() {  
+          $(this).carousel('prev');  
+          });  
+       $("#myCarousel").swipeleft(function() {  
+          $(this).carousel('next');  
+     });  
+  });  
+</script>
+
 
 </body> 
 </html>

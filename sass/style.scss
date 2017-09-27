@@ -156,7 +156,19 @@ a:active {
         }
     }
 }
-
+.button-class-white{
+    color: $white;
+    margin: 30px 2px;
+    .top{
+        top: 1px;
+    }
+    .top, .bottom, .left, .right{
+        background-color: $white;
+    }
+    &:hover{
+        color: $white;
+    }
+}
 @import 'header';
 @import 'footer';
 @import 'border-animation';
