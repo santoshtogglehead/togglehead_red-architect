@@ -729,7 +729,7 @@ var Stickem = function(elem, options) {
         setWindowHeight: function() {
             var _self = this;
 
-            _self.windowHeight = _self.$win.height();
+            _self.windowHeight = _self.$win.height() - _self.config.offset;
         }
     };
 

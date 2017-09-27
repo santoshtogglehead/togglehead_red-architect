@@ -37,9 +37,10 @@
     
     <section class="why-red">
        <div class="container-fluid stick-initial">
+
+        <!-- Section 1 -->
         <div class="row stick-div stickem-container">
           <div class="col-md-12 div-pad">
-
             <div class="col-sm-5 col-md-3 sticky-child stickem">
               <div class="media-box box">
                 <span class="top"></span>
@@ -104,17 +105,13 @@
                 
               </div>
             </div>
-            
-            
           </div>
-
         </div>
-       </div>
+         <!-- Section 1 ends -->
 
-       <div class="container-fluid stick-initial">
-        <div class="row stick-div stickem-container">
+        <!-- Section 2 -->
+        <div class="row stick-div stickem-container why-sect-2">
           <div class="col-md-12 div-pad">
-
             <div class="col-sm-5 col-md-3 sticky-child stickem">
               <div class="media-box box">
                 <span class="top"></span>
@@ -179,11 +176,10 @@
                 
               </div>
             </div>
-            
-            
           </div>
-
         </div>
+        <!-- Section 2 ends -->
+
        </div>
     </section>
  
