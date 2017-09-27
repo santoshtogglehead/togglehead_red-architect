@@ -110,6 +110,81 @@
 
         </div>
        </div>
+
+       <div class="container-fluid stick-initial">
+        <div class="row stick-div stickem-container">
+          <div class="col-md-12 div-pad">
+
+            <div class="col-sm-5 col-md-3 sticky-child stickem">
+              <div class="media-box box">
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+                <div class="out-wrapper1">
+                  <div><h3 class="box-txt">Lorem Ipsum Dolor Sitam</h3></div>
+                  <div><h4 class="box-txt-2">Our Approach</h4></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-7 col-md-9 div-pad-content sticky-parent">
+              <div class="col-md-6 wow fadeInUp" data-wow-duration="3.5s">
+                  <p class="r-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cup
+                  </p>
+              </div>
+              <div class="col-md-6 wow fadeInUp" data-wow-duration="3.5s">
+                  <p class="r-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cup
+                  </p>
+              </div>
+              <div class="col-md-12 mason-div">
+                
+                  <!-- masonary layout starts here -->
+                    <div class="lightgallery-media mason-initial">
+                      <a href="dist/img/architecture-inner/masonary/a.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/a.jpg" class="img-responsive">
+                      </a>  
+                      <a href="dist/img/architecture-inner/masonary/b.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/b.jpg" class="img-responsive">
+                      </a>  
+                      <a href="dist/img/architecture-inner/masonary/c.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/c.jpg" class="img-responsive">
+                      </a>  
+                      <a href="dist/img/architecture-inner/masonary/d.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/d.jpg" class="img-responsive">
+                      </a>  
+                      <a href="dist/img/architecture-inner/masonary/e.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/e.jpg" class="img-responsive">
+                      </a>  
+                      <a href="dist/img/architecture-inner/masonary/f.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/f.jpg" class="img-responsive">
+                      </a>
+                      <a href="dist/img/architecture-inner/masonary/f.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/f.jpg" class="img-responsive">
+                      </a>
+                      <a href="dist/img/architecture-inner/masonary/f.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/f.jpg" class="img-responsive">
+                      </a>
+                      <a href="dist/img/architecture-inner/masonary/f.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/f.jpg" class="img-responsive">
+                      </a>
+                      <a href="dist/img/architecture-inner/masonary/f.jpg" class="col-sm-6 col-lg-4 grid-item">
+                          <img src="dist/img/architecture-inner/masonary/f.jpg" class="img-responsive">
+                      </a>
+                      
+                    </div>
+                  <!-- masonary ends -->
+                
+              </div>
+            </div>
+            
+            
+          </div>
+
+        </div>
+       </div>
     </section>
  
 

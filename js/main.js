@@ -650,8 +650,8 @@ var Stickem = function(elem, options) {
                 item.containerHeight = item.$container.outerHeight();
                 item.containerInner = {
                     border: {
-                        bottom: parseInt(item.$container.css('border-bottom'), 60) || 0,
-                        top: parseInt(item.$container.css('border-top'), 60) || 0
+                        bottom: parseInt(item.$container.css('border-bottom'), 10) || 0,
+                        top: parseInt(item.$container.css('border-top'), 10) || 0
                     },
                     padding: {
                         bottom: parseInt(item.$container.css('padding-bottom'), 10) || 0,
@@ -729,7 +729,7 @@ var Stickem = function(elem, options) {
         setWindowHeight: function() {
             var _self = this;
 
-            _self.windowHeight = _self.$win.height() - _self.config.offset;
+            _self.windowHeight = _self.$win.height();
         }
     };
 
