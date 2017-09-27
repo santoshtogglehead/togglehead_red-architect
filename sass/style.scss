@@ -1,0 +1,219 @@
+@import 'reset';
+@import 'fonts';
+// gotham fonts starting
+// $gothamregular: gothamregular,
+// sans-serif;
+// $gotham_bookregular: gotham_bookregular,
+// sans-serif;
+// $gotham_lightregular: gotham_lightregular,
+// sans-serif;
+// $gotham_mediumregular: gotham_mediumregular,
+// sans-serif;
+// $gotham_thinregular: gotham_thinregular,
+// sans-serif;
+// gotham fonts ending
+// roboto fonts starting
+// $robotoregular: robotoregular,
+// sans-serif;
+// $robotolight: robotolight,
+// sans-serif;
+// $robotomedium: robotomedium,
+// sans-serif;
+// $robotoregular: robotoregular,
+// sans-serif;
+// $robotothin: robotothin,
+// sans-serif;
+// roboto fonts ending
+
+// open sans fonts
+$gotham_bookregular: open_sansregular,
+sans-serif;
+$gotham_lightregular: open_sanslight,
+sans-serif;
+$gotham_mediumregular: open_sansregular,
+sans-serif;
+// open sans fonts ends
+
+// aileron fonts starts
+$robotoregular: aileronregular,
+sans-serif;
+// aileron fonts ends
+
+$darkblue: #01161e; // darkblue color code
+$global_nav: #003d7c; // global navigation color
+$white: #fff; // white color
+$black: #000; // black color
+$menucolor: #838385; // Menucolor
+
+
+// Timeline Variables (Our story)
+
+
+
+/* =========================== #red-media ======================================= */
+
+@mixin red-media($break, $viewport1: null) {
+    // preset breakpoint
+    @if not $viewport1 {
+        @if map-has-key($breakpoints, $break) {
+            @media only screen and #{map-get($breakpoints, $break)} { @content; }
+        }
+        @else {
+            @warn "Couldn't find a breakpoint named #{$break}.";
+        }
+    }
+    @else {
+        // min breakpoint
+        @if $break == min {
+            @media screen and (min-width: $viewport1) { @content; }
+        }
+        // max breakpoint
+        @else if $break == max {
+            @media screen and (max-width: $viewport1) { @content; }
+        }
+        // min & max breakpoint
+        @else {
+            @media screen and (min-width: $break) and (max-width: $viewport1) { @content; }
+        }
+    }
+}
+
+
+
+
+body {
+    font-size: 14px;
+    font-family: $gotham_bookregular;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    color: #000;
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+
+/* visited link */
+
+a:visited {
+    text-decoration: none;
+}
+
+
+
+/* mouse over link */
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* selected link */
+
+a:active {
+    text-decoration: none;
+}
+
+.outer-valign {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.inner-valign {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.button-class {
+    display: block;
+    position: relative;
+    width: 270px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0;    
+    .top {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 270px;
+        height: 1px;
+        background-color: $global_nav;
+        transition: all 0.5s ease;
+    }
+    .right{
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 1px;
+        height: 50px;
+        background-color: $global_nav;
+        transition: all 0.5s ease;
+    }
+    .bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 270px;
+        height: 1px;
+        background-color: $global_nav;
+        transition: all 0.5s ease;
+    }
+    .left{
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 1px;
+        height: 50px;
+        background-color: $global_nav;
+        transition: all 0.5s ease;
+    }
+    &:hover{
+        .top{
+            width: 300px;
+            left:-15px;
+        }
+        .bottom{
+            width: 300px;
+            left:-15px;
+        }
+        .right{
+            height: 80px;
+            top:-15px;
+        }
+        .left{
+            height: 80px;
+            top:-15px;
+        }
+    }
+}
+
+@import 'header';
+@import 'footer';
+@import 'border-animation';
+@import 'media';
+@import 'svg-heading';
+@import 'our-story';
+@import 'why-red';
+
+@import 'architecture';
+@import 'architecture-inner';
+@import 'contact';

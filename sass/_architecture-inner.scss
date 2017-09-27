@@ -1,0 +1,376 @@
+.architecture-inner-content {
+    font-family: $gotham_mediumregular;
+    line-height: 30px;
+    .heading {
+        h5 {
+            font-size: 15px;
+            padding: 5px 0;
+        }
+        h4 {
+            color: #003d7c;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 10px 0;
+        }
+    }
+    p {
+        font-family: $gotham_bookregular;
+        font-size: 15px;
+        line-height: 30px;
+        margin: 30px 0;
+    }
+    .highlights {
+        h4 {
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .detail-block {
+            .img-text {
+                margin-top: 30px;
+                color: $black;
+                overflow: hidden;
+                img {
+                    vertical-align: middle;
+                    float: left;
+                    width: 10%;
+                }
+                span {
+                    float: left;
+                    width: 90%;
+                    padding-left: 20px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+
+.architecture-inner-image {
+    .social {
+        overflow: hidden;
+        margin-top: 25px;
+        .share-text {
+            float: left;
+            text-transform: uppercase;
+            padding: 10px 20px 10px 0;
+        }
+        .icon {
+            float: left;
+            cursor: pointer;
+            margin-right: 20px;
+            .image-cont {
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                margin-right: 10px;
+                position: relative;
+                overflow: hidden;
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: all 1s ease;
+                }
+            }
+            span {
+                display: inline-block;
+                width: 0px;
+                margin-bottom: 7px;
+                color: $global_nav;
+                overflow: hidden;
+                transition: width 1s ease;
+            }
+
+            &:hover {
+                .image-cont {
+                    img {
+                        top: -30px;
+                    }
+                }
+                span {
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+.outbox {
+    display: block;
+    position: relative;
+    margin: 30px 0;
+    .box {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        width: 70%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.out-wrapper {
+    width: 80%;
+    display: inline-block;
+    background-color: $darkblue;
+    color: $white;
+    padding: 40px 40px 60px 40px;
+    margin: 50px 0;
+    overflow: hidden;
+    position: relative;
+    left: -80%;
+    transition: all 1s ease;
+    .location,
+    .surface,
+    .completed {
+        width: 33.33%;
+        float: left;
+        opacity: 0;
+        h4 {
+            text-transform: uppercase;
+            &:before {
+                content: '';
+                width: 40px;
+                height: 2px;
+                background: #fff;
+                display: inline-block;
+                margin-bottom: 4px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .content {
+        overflow: hidden;
+        margin-top: 30px;
+        padding: 0 25px 0 0;
+        img {
+            width: 10%;
+            float: left;
+        }
+        p {
+            width: 90%;
+            float: left;
+            padding: 0 10px;
+            font-size: 15px;
+            line-height: 30px;
+        }
+    }
+}
+
+.out-wrapper-full {
+    left: 0%;
+}
+
+.inner-bottom {
+    overflow: hidden;
+    .left,
+    .right {
+        float: left;
+        width: 50%;
+        background-color: pink;
+        height: 400px;
+        border: 1px solid #000;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        .text-part {
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            transition: all 1s ease;
+        }
+        .inner-valign {
+            overflow: hidden;
+        }
+    }
+    .left {
+        background-image: url('../img/architecture-inner/banners/banner-1.jpg');
+        .content {
+            position: relative;
+            left: calc(-50% + 30px);
+            transition: all 1s ease;
+            .heading {
+                text-align: left;
+            }
+        }
+        &:hover {
+            .text-part {
+                background: rgba(1, 22, 30, 0.7);
+            }
+            .content {
+                color: $white;
+                left: 0;
+                .heading {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .right {
+        background-image: url('../img/architecture-inner/banners/banner-2.jpg');
+        .content {
+            position: relative;
+            right: calc(-50% + 30px);
+            transition: all 1s ease;
+            .heading {
+                text-align: right;
+            }
+        }
+        &:hover {
+            .text-part {
+                background: rgba(1, 22, 30, 0.7);
+            }
+            .content {
+                color: $white;
+                right: 0;
+                .heading {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    overflow: hidden;
+    padding: 0 25px;
+    z-index: 3;
+    .previous {
+        float: left;
+        width: 50%;
+        margin-top: 20px;
+        text-transform: uppercase;
+        position: relative;
+        span {
+            display: block;
+            padding: 10px 0 10px 50px;
+        }
+        &:before {
+            content: url('http://via.placeholder.com/30x30');
+            position: absolute;
+        }
+    }
+    .next {
+        float: right;
+        text-align: right;
+        width: 50%;
+        margin-top: 20px;
+        text-transform: uppercase;
+        position: relative;
+        span {
+            display: block;
+            padding: 10px 50px 0 0;
+        }
+        &:after {
+            content: url('http://via.placeholder.com/30x30');
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .heading {
+        float: left;
+        width: 50%;
+        h5 {
+            font-size: 15px;
+            padding: 5px 0;
+        }
+        h4 {
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 10px 0;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .left {
+        .text-part {
+            background: rgba(1, 22, 30, 0.7) !important;
+        }
+        .content {
+            color: $white;
+            left: 0 !important;
+            .heading {
+                text-align: left;
+            }
+        }
+    }
+    .right {
+        .text-part {
+            background: rgba(1, 22, 30, 0.7) !important;
+        }
+        .content {
+            color: $white;
+            right: 0 !important;
+            .heading {
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+@media (max-width:991px) {
+    .right,
+    .left {
+        .content {
+            .previous,
+            .next {
+                width: 100%;
+            }
+            .heading {
+                display: none;
+            }
+        }
+    }
+    .architecture-inner-image {
+        margin-top: 30px;
+        .social {
+            .icon {
+                .image-cont img {
+                    top: -30px;
+                }
+                span {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .inner-bottom .right,
+    .inner-bottom .left {
+        height: 300px;
+    }
+    .architecture-inner-image {
+        .social {
+            .share-text {
+                float: none;
+                display: block;
+            }
+            .icon {
+                float: none;
+                margin: 10px 0;
+            }
+        }
+    }
+
+
+    .out-wrapper {
+        width: 90%;
+        padding: 10px 30px 30px 30px;
+        .location,
+        .surface,
+        .completed {
+            width: 100%;
+            float: none;
+            margin-top: 40px;
+        }
+        .content {
+            padding: 0;
+            margin-top: 10px;
+        }
+    }
+}

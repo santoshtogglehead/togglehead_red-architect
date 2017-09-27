@@ -1,0 +1,99 @@
+.why-red {
+	// Timeline slider section
+	.media-box {
+	    border: 1px solid $black;
+	    margin: 0 auto;
+	    overflow: hidden;
+	    padding-bottom: 0;
+	    z-index: 9;
+	    width: 100%;
+	    .out-wrapper1 {
+		    width: 100%;
+		    display: inline-block;
+		    background-color: $white;
+		    color: #000;
+		    padding: 300px 40px 35px 40px;
+		    margin: 0 auto;
+		    overflow: hidden;
+		    position: relative;
+		    left: 0;
+		    transition: all 1s ease;
+		    @include red-media(max, 767px){
+				width: 100%;
+				padding: 200px 40px 35px 40px;
+			};	
+			.box-txt {
+				transform: rotate(-90deg);
+			    position: absolute;
+			    left: -70px;
+			    top: 125px;
+			    font-size: 16px;
+			    @include red-media(max, 767px){
+					//left: -40px;
+				};
+			}
+			.box-txt-2 {
+				font-size: 30px;
+			    text-align: center;
+			    position: relative;
+			    bottom: 0;
+			    @include red-media(max, 767px){
+					font-size: 25px;
+				};
+			}
+		}
+	}
+}
+
+.div-pad {
+	padding: 60px 16px 0;
+}
+
+.div-pad-content {
+	padding: 60px 0;
+}
+
+.mason-div {
+	margin: 30px 0;
+}
+
+.stick-div {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+.stick-div:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.sticky-parent {
+	float: right;
+	//float: right;
+	//width: 640px;
+}
+
+.sticky-child {
+	//background: #cecece;
+	//float: right;
+	/*padding: 20px;*/
+	//padding: 0 20px;
+	//width: 260px;
+}
+
+.stickit {
+	margin-left: 0;//660px;
+	position: fixed;
+	top: 0px;
+}
+
+.stickit-end {
+	bottom: 0;
+	position: absolute;
+	//right: 0;
+}

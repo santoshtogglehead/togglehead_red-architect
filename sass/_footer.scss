@@ -1,0 +1,202 @@
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -513px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.site-footer,
+.page-wrap:after {
+    height: 513px;
+}
+
+footer {
+    background-image: url("../img/banner/footer_desktop.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: $gotham_mediumregular;
+}
+
+.logo-combination {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        position: relative;
+        overflow: hidden;
+        img {
+            position: absolute;
+            left: 0;
+            top: 0; // transition: all 0.5s ease;
+            &:hover {
+                top: -25px;
+            }
+        }
+    }
+}
+
+.details {
+    padding: 0 15px;
+    a,
+    span {
+        line-height: 1.4;
+        color: #fff;
+    }
+    img {
+        vertical-align: bottom;
+        margin-right: 5px;
+    }
+    .email {
+        float: left;
+        width: 25%;
+        margin-top: 40px;
+        color: #fff;
+    }
+    .address {
+        float: left;
+        width: 50%;
+        text-align: center;
+        margin-top: 40px;
+        color: #fff;
+    }
+    .phone {
+        float: left;
+        width: 25%;
+        text-align: right;
+        margin-top: 40px;
+        color: #fff;
+    }
+}
+
+.footer-nav {
+    overflow: hidden;
+    margin-bottom: 50px;
+    ul {
+        float: left;
+        width: 25%;
+        margin-top: 60px;
+        text-align: center;
+        li {
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            &:nth-child(1) {
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            a {
+                color: #fff;
+                transition: all 0.5s ease;
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    ul.four {
+        li {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+    }
+}
+
+.bottom-nav {
+    background-color: #003d7c;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 12px;
+    span:nth-child(1) {
+        float: left;
+    }
+    span:nth-child(2) {
+        float: right;
+        a {
+            color: #fff;
+            &:hover {
+                color: #ddd;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .details {
+        text-align: center;
+        a,
+        span {
+            display: block;
+            margin-top: 10px;
+        }
+        .phone {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    footer {
+        background-image: url("../img/banner/footer_mobile.jpg");
+    }
+    .footer-nav {
+        margin-bottom: 30px;
+        ul {
+            float: none;
+            width: 100%;
+            margin-top: 40px;
+            text-align: center;
+        }
+    }
+    .details {
+        img {
+            vertical-align: bottom;
+            margin-right: 5px;
+        }
+        .email {
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .address {
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .phone {
+            float: none;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    .bottom-nav {
+        padding: 5px 0;
+        text-align: center;
+        span:nth-child(1) {
+            float: none;
+            padding: 5px 0;
+            display: block;
+        }
+        span:nth-child(2) {
+            float: none;
+            padding: 5px 0;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,215 @@
+.whole-header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.counter-height {
+    height: 74px;
+}
+
+.global-navigation {
+    background-color: $global_nav;
+    padding: 5px 0;
+}
+
+.global-wrapper {
+    float: right;
+    a {
+        margin-right: 10px;
+        color: #fff;
+        img {
+            vertical-align: bottom;
+            margin-right: 5px;
+            width: 14px;
+        }
+    }
+}
+.breadcrumb{
+    position: fixed;
+    top: 75px;
+    left: 0;
+    margin: 0;
+    background-color: transparent;
+    text-transform: capitalize;
+    z-index: 2;
+}
+.b-white{
+    color: #fff;
+    a{
+        color: #fff;
+    }
+}
+.navbar-brand {
+    padding: 5px 15px;
+}
+
+.navbar-default {
+    background-image: none;
+    border-radius: 0;
+    border: 0;
+    background-color: $darkblue;
+    color: $menucolor;
+    margin: 0;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: $white;
+    text-transform: uppercase;
+    padding: 15px 23px;
+    transition: color 0.5s ease;
+    &:hover {
+        color: $menucolor;
+    }
+    &:focus {
+        color: $menucolor;
+    }
+}
+
+.caret {
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    transform: rotate(-45deg);
+    margin: 0;
+    border: 1px solid;
+    border-color: transparent transparent $white $white;
+    position: absolute;
+    bottom: 23px;
+    right: 0;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.active>a {
+    color: $white;
+    background-image: none;
+    background-color: transparent !important;
+    transition: color 0.5s ease;
+    &:focus {
+        color: $menucolor;
+    }
+}
+
+.navbar-default .navbar-nav>.active>a {
+    &:after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        display: inline-block;
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+button.navbar-toggle {
+    &:hover,
+    &:focus {
+        background-color: transparent !important;
+    }
+    border:1px solid $white;
+    border-radius: 0;
+    .icon-bar {
+        background-color: $white !important;
+        &:nth-child(2) {
+            width: 15px;
+            margin-left: 7px;
+        }
+        &:nth-child(3) {
+            width: 10px;
+            margin-left: 12px;
+        }
+    }
+    &:before {
+        content: "menu";
+        color: $white;
+        text-transform: uppercase;
+        font-size: 16px;
+        position: absolute;
+        left: -60px;
+    }
+}
+.navbar-collapse{
+    border: 0;
+}
+.dropdown-menu{
+    text-transform: capitalize;
+}
+@media screen and (min-width:992px) {
+    #myNavbar {
+        float: right;
+    }
+    .open .dropdown-menu {
+        display: none;
+    }
+    .dropdown-menu {
+        background-color: $darkblue;
+        border: 0;
+        min-width: 220px;
+        text-transform: uppercase;
+        li {
+            overflow: hidden;
+            a {
+                color: $menucolor;
+                padding: 3px 0px;
+                position: relative;
+                left: -10px;
+                transition: all 0.5s ease;
+                &:before {
+                    content: "";
+                    width: 10px;
+                    height: 2px;
+                    background: #fff;
+                    display: inline-block;
+                    position: relative;
+                    top: -4px;
+                    margin-right: 10px;
+                }
+                &:hover,
+                &:focus {
+                    color: #fff;
+                    left: 0px;
+                    background-image: none;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .dropdown {
+        &:hover {
+            .dropdown-menu {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {    
+    .navbar-default .navbar-nav>.active>a {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .breadcrumb{
+        top:93px;
+    }
+    .global-navigation {
+        display: none;
+    }
+    .navbar-header {
+        padding: 20px 0;
+    }
+    .counter-height {
+        height: 89px;
+    }
+}
