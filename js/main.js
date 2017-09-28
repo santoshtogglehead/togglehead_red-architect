@@ -40,6 +40,12 @@ $(document).ready(function() {
             $(".cls-1").css('fill', '#fff');
         }
     }
+    if ($('#contact-us').length) {
+        new Vivus('contact-us', { type: 'delayed', duration: 150 }, contact_callback);
+        function contact_callback() {
+            $(".cls-1").css('fill', '#fff');
+        }
+    }
     if ($('#archimage').length) {
         new Vivus('archimage', { type: 'delayed', duration: 100 }, callback1);
         function callback1() {
@@ -76,18 +82,18 @@ $(document).ready(function() {
             });
             // architecture hover code
 
-            $(".architecture-block").each(function() {
+            $(".our-work-section .box").each(function() {
                 $(this).hover(
                     function() {
-                        $(this).addClass('architecture-overlay box-hover');
+                        $(this).addClass('overlay-open box-hover');
                     },
                     function() {
-                        $(this).removeClass('box-hover architecture-overlay');
+                        $(this).removeClass('overlay-open box-hover');
                     }
                 );
             });
 
-            
+
         }
     });
 
@@ -128,7 +134,9 @@ $(document).ready(function() {
         $('.surface').css('opacity', '1');
         $('.completed').css('opacity', '1');
         var x = $(this).scrollTop();
-        var y = $('.outbox').offset().top;
+        if($('.outbox').length){
+            var y = $('.outbox').offset().top;
+        }        
         if ((x >= (y - 400))) {
             $('.out-wrapper').addClass('out-wrapper-full').delay(1000).queue(function() {
                 $('.location').addClass('wow fadeInUp');

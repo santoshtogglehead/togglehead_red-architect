@@ -1,7 +1,14 @@
-<svg class="svg-element" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.06 8.76">
+<!-- <svg class="svg-element" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.06 8.76">
     <path class="cls-1" d="M.41,1H2l2.56,4L7.09,1H8.66v8.4H7.2v-6l-2.65,4h0L1.87,3.35v6H.41Z" transform="translate(-0.26 -0.74)" />
     <path class="cls-1" d="M10.82,1H17V2.28H12.29V4.44H16.5V5.78H12.29V8H17.1V9.35H10.82Z" transform="translate(-0.26 -0.74)" />
     <path class="cls-1" d="M18.86,1H22a5,5,0,0,1,1.81.32,4.26,4.26,0,0,1,1.42.88,3.93,3.93,0,0,1,.92,1.33,4.18,4.18,0,0,1,.32,1.65v0a4.22,4.22,0,0,1-.32,1.66,3.91,3.91,0,0,1-.92,1.33A4.34,4.34,0,0,1,23.8,9,4.88,4.88,0,0,1,22,9.35H18.86ZM22,8a3.27,3.27,0,0,0,1.2-.21,2.62,2.62,0,0,0,.92-.59,2.67,2.67,0,0,0,.59-.9,3,3,0,0,0,.21-1.14v0A3.08,3.08,0,0,0,24.69,4a2.65,2.65,0,0,0-.59-.91,2.7,2.7,0,0,0-.92-.6A3.19,3.19,0,0,0,22,2.28H20.33V8Z" transform="translate(-0.26 -0.74)" />
     <path class="cls-1" d="M28.33,1H29.8v8.4H28.33Z" transform="translate(-0.26 -0.74)" />
     <path class="cls-1" d="M35,.89H36.4l3.7,8.46H38.53l-.85-2h-4l-.86,2H31.33ZM37.14,6,35.69,2.66,34.25,6Z" transform="translate(-0.26 -0.74)" />
+</svg> -->
+<svg class="svg-element" id="Layer_1" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185.35 42.4">
+    <path class="cls-1" d="M46.34,51.2H42.62V28.88c0-5.22,0-11,.12-15.78C41.12,17.9,39,23.72,37.1,28.82L28.7,51.2H24L15.56,28.76c-1.86-5-4-10.86-5.52-15.6.12,4.8.12,10.56.12,15.72V51.2H6.44V9.8H12.5l14,38.28L40.4,9.8h5.94Z" transform="translate(-5.94 -9.3)" stroke-miterlimit="10" />
+    <path class="cls-1" d="M86.6,51.2H59.78V9.8H86v3.06H63.5V28.94H84.44v3.12H63.5V48.14H86.6Z" transform="translate(-5.94 -9.3)" stroke-miterlimit="10" />
+    <path class="cls-1" d="M131,30.14c0,13.08-8.16,19.8-16.26,20.82a38.84,38.84,0,0,1-5.28.24H97.34V9.8h12.3a43.31,43.31,0,0,1,5,.18C123,10.94,131,16.94,131,30.14Zm-4.08,0c0-10.62-5.82-16.08-12.66-17a35.87,35.87,0,0,0-4.8-.18h-8.4V48.08h8.22a33.45,33.45,0,0,0,5.1-.24C121.22,46.82,126.92,40.88,126.92,30.14Z" transform="translate(-5.94 -9.3)" stroke-miterlimit="10" />
+    <path class="cls-1" d="M142.22,51.2V9.8h3.72V51.2Z" transform="translate(-5.94 -9.3)" stroke-miterlimit="10" />
+    <path class="cls-1" d="M164.66,36,159.32,51.2h-4l15.3-41.4h5l14.94,41.4h-4L181.16,36Zm15.42-3.12-7-20.1-7.32,20.1Z" transform="translate(-5.94 -9.3)" stroke-miterlimit="10" />
 </svg>

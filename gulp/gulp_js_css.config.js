@@ -18,6 +18,8 @@ function jscss (){
 			'./js/vendor/vivus.min.js',
 			'./js/vendor/lightgallery.js',
 			'./js/vendor/jquery.mobile.custom.min.js',
+			'./js/jquery.validate.min.js',
+			'./js/validation.js',
 			'./js/main.js'
 		]
 	}

@@ -30,21 +30,50 @@
     <section class="our-work-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-sm-4">
+            <div class="inverted-box-black">
+              <p>dynamic, eclectic, multi-dimensional</p>
+              <h5>Our Work</h5>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div style="height: 400px;">
+              <div class="outer-valign">
+                <div class="inner-valign">
+                  <span>we strive to find creative and innovative responses that are specific to site, client and proposed users</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
             <div class="architecture-block box">
               <span class="top"></span>
               <span class="right"></span>
               <span class="bottom"></span>
               <span class="left"></span>
               <h5>architecture</h5>
+              <h4>architecture</h4>
+              <div class="overlay"></div>
             </div>
           </div>
-          <div class="col-md-7">
-            <div class="interior-block">
+          <div class="col-sm-7">
+            <div class="interior-block box">
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
               <h5>interior</h5>
+              <h4>interior</h4>
+              <div class="overlay"></div>
             </div>
-            <div class="planning-block">
+            <div class="planning-block box">
+              <span class="top"></span>
+              <span class="right"></span>
+              <span class="bottom"></span>
+              <span class="left"></span>
               <h5>planning</h5>
+              <h4>planning</h4>
+              <div class="overlay"></div>
             </div>
           </div>
         </div>
