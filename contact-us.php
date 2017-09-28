@@ -27,7 +27,7 @@
     <section class="svg-heading">
       <div class="outer-valign">
       <div class="inner-valign">
-        <?php include "svg/media.svg";?>
+        <?php include "svg/contact-us.svg";?>
       </div>
       </div>
     </section>
@@ -78,9 +78,9 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-offset-1 col-sm-10">
-            <div class="map">
-              <img src="http://via.placeholder.com/900x500" class="img-responsive">
-            </div>
+            <a class="map" href="https://www.google.co.in/maps/place/reD+-+Research+and+Enquiry+into+Design/@19.0145549,72.8213165,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7cec269a86aa9:0x82dae404601acf39!8m2!3d19.0145549!4d72.8235052" target="_blank">
+              <img src="img/map.jpg" class="img-responsive">
+            </a>
           </div>
         </div>
       </div>
