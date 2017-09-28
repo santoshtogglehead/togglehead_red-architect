@@ -17,6 +17,7 @@ function jscss (){
 			'./js/vendor/bootstrap.js',
 			'./js/vendor/vivus.min.js',
 			'./js/vendor/lightgallery.js',
+			'./js/vendor/timeliny.js',
 			'./js/main.js'
 		]
 	}

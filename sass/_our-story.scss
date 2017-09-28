@@ -276,13 +276,14 @@
    	@include red-media(max, 767px) {
 		width: 100%;
 		position: relative;
+		margin: 50px auto;
 	}
 }
 .timeliny {
 	position: relative;
     display: block;
     margin: 0 auto 0;
-    padding: 10rem 0;
+    padding: 10rem 0 0;
     top: 30px;
     left: -10px;
 	width: 100%;
@@ -296,6 +297,7 @@
 	}
 	@include red-media(max, 767px) {
 		left: 0;
+		top: -30px;
 	}
 	&.loaded {
 	    opacity: 1;
@@ -432,8 +434,9 @@
     z-index: 9;
     @include red-media(max, 767px) {
     	right: 0;
-    	top: 165px;
-    }
+    	top: 26px;
+    	width: 50px;
+    };
     .circle-inner {
     	border: 1px solid;
         width: 100px;
@@ -444,9 +447,28 @@
 		    width: 50px;
             height: 50px;
 	    }
+	    .calender-icon {
+	    	width: 50px;
+		    margin: 0 auto;
+		    position: absolute;
+		    top: 22px;
+		    left: 24px;
+		    @include red-media(max, 767px) {
+			    width: 28px;
+			    top: 11px;
+			    left: 12px;
+		    }
+	    }
     }
 }
 
+.hidden-md {
+	.circle-div {
+		@include red-media(max, 767px){
+			left: 0;
+	    };
+	}
+}
 //Video 
 .scalecraftwrapper {
     width: 60%;
@@ -465,7 +487,7 @@
 
 //link div
 .sect-5 {
-    padding: 70px 0 0;
+    padding: 20px 0 0;
 }
 .link-sect {
 	background: $darkblue;

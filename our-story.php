@@ -118,6 +118,13 @@
           </div>
 
           <div class="slider-div">
+            <div class="hidden-md hidden-lg hidden-sm">
+              <div class="circle-div">
+                <div id="next" class="circle-inner">
+                  <img class="img-responsive calender-icon" src="dist/img/our-story/calender.png">
+                </div>
+              </div>
+            </div>
             <div id="example">
               <div data-year="2012">
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cup
@@ -127,15 +134,20 @@
               <div data-year="2015">4500+ Free jQuery Plugins</div>
               <div data-year="2016" class="active">5500+ Free jQuery Plugins</div>
             </div>
+
             <div class="col-md-2"></div>
             <div class="col-md-8" id="test12">
               <p>Text</p>
             </div>
+
             <div class="">
-            <div class="circle-div" id="prev">
-                <div class="circle-inner"></div>
+              <div class="circle-div">
+                  <div id="prev" class="circle-inner">
+                    <img class="img-responsive calender-icon" src="dist/img/our-story/calender.png">
+                  </div>
+              </div>
             </div>
-          </div>
+
           </div>
           
         </div>
@@ -163,17 +175,31 @@
   </div>
   <?php include("includes/include_js.html") ?>
   <script>
-    $('#example').timeliny();
     $(window).load(function(){
       var a121 = $('#example').find('.active').children('a').attr('data-text');
       $('#test12').html(a121);
     });
+
     currentyear = 2017;
+    $('#example').timeliny({
+        afterChange: function(currYear) {
+        currentyear = parseInt(currYear);
+        console.log(currentyear);
+      }
+    });
     $('#prev').on('click',function(e){
-      currentyear -= 1; 
-      e.preventDefault();
-      console.log(currentyear);
-      $('#example').timeliny('goToYear', currentyear);
+      if(currentyear > 2012){
+        currentyear -= 1; 
+        e.preventDefault();
+        $('#example').timeliny('goToYear', currentyear);
+      }
+    });
+    $('#next').on('click',function(e){
+      if(currentyear < 2017){
+        currentyear += 1; 
+        e.preventDefault();
+        $('#example').timeliny('goToYear', currentyear);
+      }
     });
   </script> 
 </body>

@@ -1345,6 +1345,7 @@ footer {
     .slider-div {
         width: 100%;
         position: relative;
+        margin: 50px auto;
     }
 }
 
@@ -1352,7 +1353,7 @@ footer {
     position: relative;
     display: block;
     margin: 0 auto 0;
-    padding: 10rem 0;
+    padding: 10rem 0 0;
     top: 30px;
     left: -10px;
     width: 100%;
@@ -1372,6 +1373,7 @@ footer {
 @media screen and (max-width: 767px) {
     .timeliny {
         left: 0;
+        top: -30px;
     }
 }
 
@@ -1526,7 +1528,8 @@ footer {
 @media screen and (max-width: 767px) {
     .circle-div {
         right: 0;
-        top: 165px;
+        top: 26px;
+        width: 50px;
     }
 }
 
@@ -1542,6 +1545,28 @@ footer {
     .circle-div .circle-inner {
         width: 50px;
         height: 50px;
+    }
+}
+
+.circle-div .circle-inner .calender-icon {
+    width: 50px;
+    margin: 0 auto;
+    position: absolute;
+    top: 22px;
+    left: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .circle-div .circle-inner .calender-icon {
+        width: 28px;
+        top: 11px;
+        left: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hidden-md .circle-div {
+        left: 0;
     }
 }
 
@@ -1569,7 +1594,7 @@ footer {
 }
 
 .sect-5 {
-    padding: 70px 0 0;
+    padding: 20px 0 0;
 }
 
 .link-sect {

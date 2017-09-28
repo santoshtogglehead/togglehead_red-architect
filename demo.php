@@ -36,10 +36,10 @@
     <!-- svg heading part -->
     
     <section class="why-red">
-       <div class="container-fluid stick-initial">
+       <div class="container-fluid">
 
         <!-- Section 1 -->
-        <div class="row stick-div stickem-container">
+        <div class="row stick-div stickem-container stick-initial">
           <div class="col-md-12 div-pad">
             <div class="col-sm-5 col-md-3 sticky-child stickem">
               <div class="media-box box">
